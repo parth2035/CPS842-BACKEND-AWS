@@ -1,0 +1,11 @@
+services:
+  fastapi:
+    public: true
+    image: parth35/fastapi-crud:latest
+    build: .
+    replicas: 1
+    ports:
+      - 8000
+    resources:
+      cpu: 1000m
+      memory: 3Gi
